@@ -77,7 +77,8 @@ a {
 }
 
 a:hover {
-  color: var(--hover);
+   color: var(--hover);
+   cursor: ne-resize;
 }
 
 /* The site name is a link but stays regular weight */

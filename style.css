@@ -1,0 +1,230 @@
+/* ==========================================================
+   Guillem Ayora Sorli: shared stylesheet
+   Headers: Helvetica bold uppercase. Text: Times New Roman.
+   Change the colours and sizes in the :root block below.
+   ========================================================== */
+
+:root {
+  --bg: #faf8f3;          /* warm off-white paper */
+  --text: #1a1a1a;
+  --muted: #666666;
+  --rule: #1a1a1a;
+  --link: #1a1a1a;
+  --link-hover: #8a1c1c;  /* dark red accent */
+
+  --font-head: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: "Times New Roman", Times, serif;
+
+  --measure: 42rem;       /* line length of the text column */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+/* ---------- Header and navigation ---------- */
+
+.site-header {
+  border-bottom: 3px solid var(--rule);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.site-title {
+  font-family: var(--font-head);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 1.6rem;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.site-title a {
+  text-decoration: none;
+}
+
+.tagline {
+  margin: 0.4rem 0 0;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.nav {
+  margin-top: 1rem;
+  font-family: var(--font-head);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+}
+
+.nav a {
+  margin-right: 1.25rem;
+  text-decoration: none;
+}
+
+.nav a:hover,
+.nav a[aria-current="page"] {
+  border-bottom: 2px solid var(--rule);
+}
+
+/* ---------- Headings ---------- */
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-head);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 2.25rem 0 0.75rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+h3 {
+  font-size: 0.85rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+/* ---------- Text ---------- */
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--rule);
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 1.5rem 0;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ---------- Post list (homepage) ---------- */
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #d8d4c8;
+}
+
+.post-list .meta {
+  font-family: var(--font-head);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.post-list .post-title {
+  display: block;
+  font-size: 1.15rem;
+  margin: 0.15rem 0;
+}
+
+.post-list .summary {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* ---------- Single post ---------- */
+
+.post-meta {
+  font-family: var(--font-head);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.sources ul {
+  padding-left: 1.25rem;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 3px solid var(--rule);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.site-footer p {
+  margin: 0 0 0.5rem;
+}
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 480px) {
+  html {
+    font-size: 16.5px;
+  }
+
+  .site-title {
+    font-size: 1.3rem;
+  }
+}

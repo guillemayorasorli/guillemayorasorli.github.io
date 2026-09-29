@@ -8,7 +8,7 @@
 :root {
   --text-size: 18px;      /* size of all normal text */
   --title-size: 26px;     /* site name and article titles */
-  --hover: #777777;       /* link hover colour (try #1a5fb4 for blue) */
+  --hover: #0000FF;       /* link hover colour (try #1a5fb4 for blue) */
   --measure: 40rem;       /* width of the text column */
 }
 

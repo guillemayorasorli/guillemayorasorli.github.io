@@ -77,7 +77,7 @@ a {
 }
 
 a:hover {
-   color: var(--hover);
+  color: var(--hover);
    cursor: ne-resize;
 }
 

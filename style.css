@@ -1,10 +1,3 @@
-/* ==========================================================
-   Guillem Ayora Sorli: shared stylesheet
-   Everything is black Times New Roman at one size.
-   Only the site name and article titles are larger.
-   Only links are bold. Links turn gray on hover.
-   ========================================================== */
-
 :root {
   --text-size: 18px;      /* size of all normal text */
   --title-size: 26px;     /* site name and article titles */
@@ -39,6 +32,7 @@ h1{
   font-style: normal;
   text-transform: none;
   letter-spacing: normal;
+   margin: 0 0 0.5rem;
 }
 h2,
 h3,
@@ -51,6 +45,7 @@ figcaption {
   font-style: normal;
   text-transform: none;
   letter-spacing: normal;
+   margin: 0 0 0.5rem;
 }
 
 /* Links: bold, black, gray on hover, no underline */

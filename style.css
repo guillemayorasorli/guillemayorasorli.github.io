@@ -33,7 +33,13 @@ body {
 }
 
 /* All headings look like normal text by default */
-h1,
+h1{
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: normal;
+}
 h2,
 h3,
 p,
@@ -50,8 +56,6 @@ figcaption {
 /* Links: bold, black, gray on hover, no underline */
 a {
   color: #000000;
-  text-decoration: underline dotted;
-
 }
 
 a:hover {

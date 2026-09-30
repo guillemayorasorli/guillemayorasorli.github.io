@@ -1,160 +1,34 @@
-/* ==========================================================
-   Guillem Ayora Sorli: shared stylesheet
-   Everything is black Times New Roman at one size.
-   Only the site name and article titles are larger.
-   Only links are bold. Links turn gray on hover.
-   ========================================================== */
-
-:root {
-  --text-size: 18px;      /* size of all normal text */
-  --title-size: 26px;     /* site name and article titles */
-  --hover: #0000FF;       /* link hover colour (try #1a5fb4 for blue) */
-  --measure: 40rem;       /* width of the text column */
-}
-
-html {
-  font-size: var(--text-size);
-}
-
 body {
-  margin: 0;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
   background: #ffffff;
   color: #000000;
   font-family: "Times New Roman", Times, serif;
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: normal;
   line-height: 1.6;
 }
 
-.wrap {
-  max-width: var(--measure);
-  margin: 0 auto;
-  padding: 2rem 1.25rem 3rem;
-}
-
-/* All headings look like normal text by default */
-h1,
-h2,
-h3,
-p,
-li,
-blockquote,
-figcaption {
-  font-size: 1rem;
+h1{
+  font-size: 1.2em;
   font-weight: normal;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: normal;
+  margin: 0 0 1rem;
+}
+h2,
+p {
+  font-size: 1em;
+  font-weight: normal;
   margin: 0 0 1rem;
 }
 
-h2,
-h3 {
-  margin-top: 2rem;
-}
-
-/* Larger text: site name, page titles and article titles */
-.site-title,
-main h1,
-.post-title {
-  font-size: var(--title-size);
-  line-height: 1.2;
-}
-
-.site-title {
-  margin: 0 0 0.5rem;
-}
-
-main h1 {
-  margin-bottom: 1.5rem;
-}
-
-/* Links: bold, black, gray on hover, no underline */
 a {
   color: #000000;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline wavy;
+  text-underline-offset: 0.2em;
 }
 
 a:hover {
-  color: var(--hover);
-}
-
-/* The site name is a link but stays regular weight */
-.site-title a {
-  font-weight: normal;
-}
-
-/* Header and navigation */
-.site-header {
-  margin-bottom: 2.5rem;
-}
-
-.tagline {
-  margin: 0 0 1rem;
-}
-
-.nav a {
-  margin-right: 1.25rem;
-}
-
-/* Homepage post list */
-.post-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.post-list li {
-  margin: 0 0 1.75rem;
-}
-
-.post-list .post-title {
-  display: block;
-  margin: 0 0 0.25rem;
-}
-
-.post-list .meta,
-.post-meta,
-.post-list .summary {
-  margin: 0;
-}
-
-.post-meta {
-  margin-bottom: 2rem;
-}
-
-/* Quotes, images, sources */
-blockquote {
-  padding-left: 1.5rem;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-figure {
-  margin: 1.5rem 0;
-}
-
-.sources ul {
-  padding-left: 1.25rem;
-}
-
-/* Footer */
-.site-footer {
-  margin-top: 3rem;
-}
-
-.site-footer p {
-  margin: 0 0 0.25rem;
-}
-
-/* Small screens */
-@media (max-width: 480px) {
-  :root {
-    --text-size: 16.5px;
-    --title-size: 23px;
-  }
+  color: #0000FF;
 }

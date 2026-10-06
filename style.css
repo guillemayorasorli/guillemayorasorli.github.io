@@ -46,6 +46,8 @@ figcaption {
   text-transform: none;
   letter-spacing: normal;
    margin: 0 0 0.5rem;
+  text-align: justify;
+  hyphens: auto;
 }
 
 /* Links: bold, black, gray on hover, no underline */

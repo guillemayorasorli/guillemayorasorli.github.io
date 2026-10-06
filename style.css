@@ -17,6 +17,8 @@ body {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .wrap {
@@ -33,6 +35,8 @@ h1{
   text-transform: none;
   letter-spacing: normal;
    margin: 0 0 0.5rem;
+  text-align: justify;
+  hyphens: auto;
 }
 h2,
 h3,
